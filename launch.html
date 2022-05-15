@@ -1,0 +1,7 @@
+{% extends "result.html" %}
+
+{% block content %}
+    {% for line in lines %}
+    <tr><td>{{ line.dt }}</td><td>{{ line.n1 }}</td><td>{{ line.n2 }}</td><td>{{ line.n3 }}</td><td>{{ line.n4 }}</td><td>{{ line.status }}</td><td>{{ line.mixture_q }}</td></tr>
+    {% endfor %}
+{% endblock %}entry
